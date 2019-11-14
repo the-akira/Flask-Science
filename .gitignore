@@ -1,6 +1,5 @@
 .myvenv
 myvenv/
 __pycache__/
-app1/
-mvc/
+
 
