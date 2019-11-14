@@ -38,4 +38,4 @@ Através do seu Web Browser, navegue até `http://127.0.0.1:5000/`
 
 Divirta-se experimentando! 
 
-Baseado no tutorial: **[Flask4Scientists](http://hplgit.github.io/web4sciapps/doc/pub/web4sa_flask.html)**
+Inspirado no tutorial: **[Flask4Scientists](http://hplgit.github.io/web4sciapps/doc/pub/web4sa_flask.html)**
