@@ -1,0 +1,54 @@
+<head>
+	  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+
+<body>
+
+  <div class="col-md-6 col-md-offset-3">
+
+      <h2 class="text-center">Definida a Função Matemática</h2> 
+      <p class="text-center"> 
+        \(
+        u(t) = Ae^{-bt}\sin (w t), \hbox{ for } t\in [0,T]
+        \)
+      </p>
+      <form method=post action="" class="form-group">
+          <p>Dados de Entrada:</p>
+          <table>
+            {% for field in form %}
+              <tr>
+              <td class="name">{{ field.name }}</td><td>{{ field(size=12) }}</td>
+              <td>{{ field.label }}</td>
+              {% if field.errors %}
+                <td><ul class=errors>
+                {% for error in field.errors %}
+                  <li><font color="red">{{ error }}</font></li>
+                {% endfor %}</ul></td>
+              {% endif %}
+              </tr>
+            {% endfor %}
+          </table>
+          <input type=submit value=Computar class="btn btn-primary mt-3">
+      </form>
+      <br>
+
+      {% if result != None %}
+      	<img src="{{ result }}" class="center" width="500">
+      {% endif %}
+
+  </div>
+
+  <script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    TeX: {
+       equationNumbers: {  autoNumber: "AMS"  },
+       extensions: ["AMSmath.js", "AMSsymbols.js", "autobold.js", "color.js"]
+    }
+  });
+  </script>
+  <script type="text/javascript"
+   src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  </script>
+
+</body>

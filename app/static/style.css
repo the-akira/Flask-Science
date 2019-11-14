@@ -1,0 +1,45 @@
+body {
+	background-color: #7aafc4 !important;
+}
+
+h2{
+	color: black !important;
+}
+
+p{
+	font-size: 1.7rem;
+	color: black !important;
+}
+
+td.name{
+	color: black;
+}
+
+.form-group{
+	margin-top: 5px;
+	background-color: white !important;
+	padding: 23px;
+	border: 2px solid black;
+}
+
+.btn{
+	margin-top: 7px;
+}
+
+.btn-primary{
+	background-color: black !important;
+	border: none !important;
+}
+
+label{
+	margin-left: 4px;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 65%;
+  margin-bottom: 10px;
+  border: 1px solid black;
+}
