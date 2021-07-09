@@ -16,7 +16,6 @@ def index():
         s = compute(r)
     else:
         s = None
-
     return render_template("view.html", form=form, s=s)
 
 if __name__ == '__main__':

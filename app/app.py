@@ -8,11 +8,9 @@ app = Flask(__name__)
 def index():
     form = InputForm(request.form)
     if request.method == 'POST' and form.validate():
-        result = compute(form.A.data, form.b.data,
-                         form.w.data, form.T.data)
+        result = compute(form.A.data, form.b.data, form.w.data, form.T.data)
     else:
         result = None
-
     return render_template('view.html', form=form, result=result)
 
 if __name__ == '__main__':

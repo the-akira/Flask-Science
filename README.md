@@ -1,11 +1,13 @@
 # Flask Científico
 
+Simples aplicação científica desenvolvida com Flask.
+
 ## Instalação
 
 ### Crie um Clone do Repositório
 
 ```
-git clone https://github.com/the-akira/flask-cientifico.git
+git clone https://github.com/the-akira/Flask-Science.git
 ```
 
 ### Dentro do Diretório Principal (root)

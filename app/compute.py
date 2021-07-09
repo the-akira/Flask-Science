@@ -19,7 +19,7 @@ def compute(A, b, w, T, resolution=500):
         for filename in glob.glob(os.path.join('static', '*.png')):
             os.remove(filename)
     # Use time since Jan 1, 1970 in filename in order make
-    # a unique filename that the browser has not chached
+    # a unique filename that the browser has not cached
     plotfile = os.path.join('static', str(time.time()) + '.png')
     plt.savefig(plotfile)
     return plotfile
