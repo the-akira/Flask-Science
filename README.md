@@ -1,5 +1,7 @@
 # Flask Científico
 
+![img](https://raw.githubusercontent.com/the-akira/Flask-Science/master/FlaskScience.png)
+
 Simples aplicação científica desenvolvida com Flask.
 
 ## Instalação
